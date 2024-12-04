@@ -1,0 +1,100 @@
+{
+	"edges": [
+		{
+			"id": "reactflow__edge-capsule_i_glu_sn_fr_registration_1-results",
+			"selected": false,
+			"source": "capsule_i_glu_sn_fr_registration_1",
+			"target": "results"
+		},
+		{
+			"id": "reactflow__edge-capsule_ca_im_an_suite_2_p_registeration_2-results",
+			"source": "capsule_ca_im_an_suite_2_p_registeration_2",
+			"target": "results"
+		},
+		{
+			"id": "reactflow__edge-capsule_ca_im_an_suite_2_p_registeration_3-results",
+			"source": "capsule_ca_im_an_suite_2_p_registeration_3",
+			"target": "results"
+		},
+		{
+			"id": "reactflow__edge-d644fb2f-b6cf-4b78-8d3e-14a477f43056-capsule_i_glu_sn_fr_registration_1",
+			"selected": true,
+			"source": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
+			"target": "capsule_i_glu_sn_fr_registration_1"
+		},
+		{
+			"id": "reactflow__edge-d644fb2f-b6cf-4b78-8d3e-14a477f43056-capsule_ca_im_an_suite_2_p_registeration_2",
+			"selected": false,
+			"source": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
+			"target": "capsule_ca_im_an_suite_2_p_registeration_2"
+		},
+		{
+			"id": "reactflow__edge-d644fb2f-b6cf-4b78-8d3e-14a477f43056-capsule_ca_im_an_suite_2_p_registeration_3",
+			"selected": false,
+			"source": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
+			"target": "capsule_ca_im_an_suite_2_p_registeration_3"
+		}
+	],
+	"nodes": [
+		{
+			"id": "results",
+			"position": {
+				"x": 924.0816743933435,
+				"y": 838.4928529215802
+			},
+			"selected": false,
+			"type": "results"
+		},
+		{
+			"data": {
+				"capsule_id": "a87e854d-9183-4fb0-b089-1ddb75975fea"
+			},
+			"id": "capsule_i_glu_sn_fr_registration_1",
+			"position": {
+				"x": 486.1766071747737,
+				"y": 516.9410255044323
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51"
+			},
+			"id": "capsule_ca_im_an_suite_2_p_registeration_2",
+			"position": {
+				"x": 862.693759407083,
+				"y": 504.91106154310546
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51"
+			},
+			"id": "capsule_ca_im_an_suite_2_p_registeration_3",
+			"position": {
+				"x": 1307.1268546414778,
+				"y": 513.8305663029113
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"id": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
+			"position": {
+				"x": 903.8912110278998,
+				"y": 184.97918457260124
+			},
+			"selected": false,
+			"type": "dataset"
+		}
+	],
+	"timestamp": 1733293283750,
+	"viewport": {
+		"x": -93.75564176836826,
+		"y": -42.286532360172714,
+		"zoom": 0.618078559068068
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"version": 1,
+	"attached_datasets": [
+		{
+			"id": "6bf4b0ea-6cd8-427f-a301-a82b9bfbf913",
+			"mount": "iGluSnFR_simulations_1"
+		},
+		{
+			"id": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
+			"mount": "iGluSnFR_simulations"
+		}
+	]
+}
