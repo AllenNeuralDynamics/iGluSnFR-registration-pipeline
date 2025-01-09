@@ -7,7 +7,7 @@
 	"spot": true,
 	"nextflow_error_strategy": {
 		"error_strategy": "retry",
-		"max_retries": 2,
+		"max_retries": 4,
 		"max_errors": 5
 	},
 	"verbose_logs": true

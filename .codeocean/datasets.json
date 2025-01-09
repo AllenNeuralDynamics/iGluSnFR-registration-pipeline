@@ -2,8 +2,20 @@
 	"version": 1,
 	"attached_datasets": [
 		{
+			"id": "56885832-ccc9-4e7c-a019-14e653b60bb9",
+			"mount": "iGluSnFR_simulations_default"
+		},
+		{
+			"id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
+			"mount": "iGluSnFR4f_dendrite_passiveDriftingGratings"
+		},
+		{
 			"id": "6bf4b0ea-6cd8-427f-a301-a82b9bfbf913",
 			"mount": "iGluSnFR_simulations_1"
+		},
+		{
+			"id": "7d9a0276-e779-4835-9d97-2c7216534f24",
+			"mount": "iGluSnFR_simulations_600"
 		},
 		{
 			"id": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",

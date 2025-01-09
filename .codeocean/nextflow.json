@@ -7,7 +7,7 @@
 				"id": "a87e854d-9183-4fb0-b089-1ddb75975fea",
 				"name": "iGluSnFR-registration",
 				"slug": "6936755",
-				"commit": "5413a035cac33793b702b5b99982fef7d9766218",
+				"commit": "c3620ad1fe1cd290afe01ff823372d89781f899c",
 				"image_tag": "4661f2289a0ae9f2d6abfbac71d41b87",
 				"arguments": [
 					"../data/*",
@@ -20,11 +20,11 @@
 			},
 			"inputs": [
 				{
-					"id": "00skJABZZPRFs1hP",
-					"source_id": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
+					"id": "Ly5ViyOoCNmQe5Sf",
+					"source_id": "56885832-ccc9-4e7c-a019-14e653b60bb9",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
+					"name": "iGluSnFR_simulations_default",
+					"source_path": "iGluSnFR_simulations_default/*"
 				}
 			],
 			"results": {
@@ -39,8 +39,8 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "929c3a16bc9d0103fa77f85f25241ba330826f58",
-				"image_tag": "aa302fb5bc6ab02dac015ae69e4a92ce",
+				"commit": "e8546605398632e6a5bdb90f357ec65f62d718f3",
+				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
 					"../results/",
@@ -48,16 +48,16 @@
 				]
 			},
 			"resources": {
-				"cpus": 16,
+				"cpus": 64,
 				"memory": 128
 			},
 			"inputs": [
 				{
-					"id": "GIxeyntvblViCOQG",
-					"source_id": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
+					"id": "O5GYRX2wRmiJGqoC",
+					"source_id": "56885832-ccc9-4e7c-a019-14e653b60bb9",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
+					"name": "iGluSnFR_simulations_default",
+					"source_path": "iGluSnFR_simulations_default/*"
 				}
 			],
 			"results": {
@@ -72,31 +72,60 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "929c3a16bc9d0103fa77f85f25241ba330826f58",
-				"image_tag": "aa302fb5bc6ab02dac015ae69e4a92ce",
+				"commit": "e8546605398632e6a5bdb90f357ec65f62d718f3",
+				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
 					"../results/",
-					"caiman"
+					"caiman",
+					"-resume"
 				]
 			},
 			"resources": {
-				"cpus": 16,
+				"cpus": 64,
 				"memory": 128
 			},
 			"inputs": [
 				{
-					"id": "uyTb9gXm35oMM6CZ",
-					"source_id": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
+					"id": "SGN2YjhBMOTiKYb2",
+					"source_id": "56885832-ccc9-4e7c-a019-14e653b60bb9",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
+					"name": "iGluSnFR_simulations_default",
+					"source_path": "iGluSnFR_simulations_default/*"
 				}
 			],
 			"results": {
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"source_path": "*",
 				"target_path": "caiman"
+			}
+		},
+		{
+			"name": "capsule_calebs_strip_registration_bergamo_using_matlab_runtime_4",
+			"capsule": {
+				"id": "d5c41354-8c96-4334-b8ef-654ba0882929",
+				"name": "Calebs stripRegistrationBergamo using MATLAB_Runtime",
+				"slug": "3744737",
+				"commit": "a1eba1a21523d451af74ae7677a1a3053cbfd89e",
+				"image_tag": "7ab891deacf46b1e885cefee98811618"
+			},
+			"resources": {
+				"cpus": 64,
+				"memory": 256
+			},
+			"inputs": [
+				{
+					"id": "wuv9FrkLiBl7wMSW",
+					"source_id": "56885832-ccc9-4e7c-a019-14e653b60bb9",
+					"type": "dataset",
+					"name": "iGluSnFR_simulations_default",
+					"source_path": "iGluSnFR_simulations_default/*"
+				}
+			],
+			"results": {
+				"id": "d5c41354-8c96-4334-b8ef-654ba0882929",
+				"source_path": "*",
+				"target_path": "stripRegisteration_matlab"
 			}
 		}
 	]
