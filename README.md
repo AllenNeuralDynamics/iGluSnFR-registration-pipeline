@@ -1,8 +1,8 @@
 # iGluSnFR-registration-pipeline
 This workflow leverages the Nextflow framework to automate and parallelize image registration tasks. It supports multiple registration algorithms, including:
-- iGluSnFR Strip Registration
-- CaImAn Suite2p Registration
-- Matlab implementation of Strip Registration
+- iGluSnFR Strip Registration [GIT](https://github.com/AllenNeuralDynamics/iGluSnFR-registration)/[CAPSULE](https://codeocean.allenneuraldynamics.org/capsule/6936755/tree)
+- CaImAn Suite2p Registration [GIT](https://github.com/AllenNeuralDynamics/CaImAn-Suite2p-Registeration.git)/[CAPSULE](https://codeocean.allenneuraldynamics.org/capsule/6874496/tree)
+- Matlab implementation of Strip Registration [CAPSULE](https://codeocean.allenneuraldynamics.org/capsule/8667111/tree)
 
 * `Matlab implementation of Strip Registration` capsule has flags: `-- maxshift 50` `--clipShift 10` `--removeLines 4` `--ds_time 0` 
 * `CaImAn Suite2p Registration` capsule needs flags `-- caiman` or `-- suite2p` to switch between CaImAn and Suite2p
