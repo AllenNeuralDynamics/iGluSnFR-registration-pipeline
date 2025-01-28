@@ -1,14 +1,14 @@
 #!/usr/bin/env nextflow
-// hash:sha256:3df89e30df362d839ec8be310580f171930b18ff04023511612bf6c879a6f1cc
+// hash:sha256:8fac7bf6a7a3c5569e02bc4750e118e05fbedaa2bfdb75bcf1454258b9e637a9
 
 nextflow.enable.dsl = 1
 
-iglusnfr_simulations_600_to_iglusnfr_registration_1 = channel.fromPath("../data/iGluSnFR_simulations_600/[1-600]*", type: 'any', relative: true)
-iglusnfr_simulations_600_to_caiman_suite2p_registeration_2 = channel.fromPath("../data/iGluSnFR_simulations_600/[1-600]*", type: 'any', relative: true)
-iglusnfr_simulations_600_to_caiman_suite2p_registeration_3 = channel.fromPath("../data/iGluSnFR_simulations_600/[1-600]*", type: 'any', relative: true)
-iglusnfr_simulations_600_to_caleb_stripregbergamo_4 = channel.fromPath("../data/iGluSnFR_simulations_600/[1-600]*", type: 'any', relative: true)
-iglusnfr_simulations_600_to_caiman_suite2p_registeration_5 = channel.fromPath("../data/iGluSnFR_simulations_600/[1-600]*", type: 'any', relative: true)
-iglusnfr_simulations_600_to_caiman_suite2p_registeration_6 = channel.fromPath("../data/iGluSnFR_simulations_600/[1-600]*", type: 'any', relative: true)
+zstack_sim_zmotion900_to_iglusnfr_registration_1 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
+zstack_sim_zmotion900_to_caiman_suite2p_registeration_2 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
+zstack_sim_zmotion900_to_caiman_suite2p_registeration_3 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
+zstack_sim_zmotion900_to_caleb_stripregbergamo_4 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
+zstack_sim_zmotion900_to_caiman_suite2p_registeration_5 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
+zstack_sim_zmotion900_to_caiman_suite2p_registeration_6 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
 
 // capsule - iGluSnFR-registration
 process capsule_i_glu_sn_fr_registration_1 {
@@ -21,7 +21,7 @@ process capsule_i_glu_sn_fr_registration_1 {
 	publishDir "$RESULTS_PATH/stripRegisteration", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path1 from iglusnfr_simulations_600_to_iglusnfr_registration_1
+	val path1 from zstack_sim_zmotion900_to_iglusnfr_registration_1
 
 	output:
 	path 'capsule/results/*'
@@ -40,7 +40,7 @@ process capsule_i_glu_sn_fr_registration_1 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/iGluSnFR_simulations_600/$path1" "capsule/data/$path1" # id: 7d9a0276-e779-4835-9d97-2c7216534f24
+	ln -s "/tmp/data/zstack-sim-zmotion900/$path1" "capsule/data/$path1" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6936755.git" capsule-repo
@@ -68,7 +68,7 @@ process capsule_ca_im_an_suite_2_p_registeration_2 {
 	publishDir "$RESULTS_PATH/suite2p", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path2 from iglusnfr_simulations_600_to_caiman_suite2p_registeration_2
+	val path2 from zstack_sim_zmotion900_to_caiman_suite2p_registeration_2
 
 	output:
 	path 'capsule/results/*'
@@ -87,7 +87,7 @@ process capsule_ca_im_an_suite_2_p_registeration_2 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/iGluSnFR_simulations_600/$path2" "capsule/data/$path2" # id: 7d9a0276-e779-4835-9d97-2c7216534f24
+	ln -s "/tmp/data/zstack-sim-zmotion900/$path2" "capsule/data/$path2" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6874496.git" capsule-repo
@@ -115,7 +115,7 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	publishDir "$RESULTS_PATH/caiman", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path3 from iglusnfr_simulations_600_to_caiman_suite2p_registeration_3
+	val path3 from zstack_sim_zmotion900_to_caiman_suite2p_registeration_3
 
 	output:
 	path 'capsule/results/*'
@@ -134,7 +134,7 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/iGluSnFR_simulations_600/$path3" "capsule/data/$path3" # id: 7d9a0276-e779-4835-9d97-2c7216534f24
+	ln -s "/tmp/data/zstack-sim-zmotion900/$path3" "capsule/data/$path3" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6874496.git" capsule-repo
@@ -162,7 +162,7 @@ process capsule_caleb_strip_reg_bergamo_4 {
 	publishDir "$RESULTS_PATH/stripRegisteration_matlab", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path4 from iglusnfr_simulations_600_to_caleb_stripregbergamo_4
+	val path4 from zstack_sim_zmotion900_to_caleb_stripregbergamo_4
 
 	output:
 	path 'capsule/results/*'
@@ -181,7 +181,7 @@ process capsule_caleb_strip_reg_bergamo_4 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/iGluSnFR_simulations_600/$path4" "capsule/data/$path4" # id: 7d9a0276-e779-4835-9d97-2c7216534f24
+	ln -s "/tmp/data/zstack-sim-zmotion900/$path4" "capsule/data/$path4" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8667111.git" capsule-repo
@@ -209,7 +209,7 @@ process capsule_ca_im_an_suite_2_p_registeration_5 {
 	publishDir "$RESULTS_PATH/caiman_stripCaiman", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path5 from iglusnfr_simulations_600_to_caiman_suite2p_registeration_5
+	val path5 from zstack_sim_zmotion900_to_caiman_suite2p_registeration_5
 
 	output:
 	path 'capsule/results/*'
@@ -228,7 +228,7 @@ process capsule_ca_im_an_suite_2_p_registeration_5 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/iGluSnFR_simulations_600/$path5" "capsule/data/$path5" # id: 7d9a0276-e779-4835-9d97-2c7216534f24
+	ln -s "/tmp/data/zstack-sim-zmotion900/$path5" "capsule/data/$path5" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6874496.git" capsule-repo
@@ -256,7 +256,7 @@ process capsule_ca_im_an_suite_2_p_registeration_6 {
 	publishDir "$RESULTS_PATH/caiman_stripJnormcorre", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path6 from iglusnfr_simulations_600_to_caiman_suite2p_registeration_6
+	val path6 from zstack_sim_zmotion900_to_caiman_suite2p_registeration_6
 
 	output:
 	path 'capsule/results/*'
@@ -275,7 +275,7 @@ process capsule_ca_im_an_suite_2_p_registeration_6 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/iGluSnFR_simulations_600/$path6" "capsule/data/$path6" # id: 7d9a0276-e779-4835-9d97-2c7216534f24
+	ln -s "/tmp/data/zstack-sim-zmotion900/$path6" "capsule/data/$path6" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6874496.git" capsule-repo

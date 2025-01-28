@@ -18,6 +18,10 @@
 			"mount": "iGluSnFR_simulations_600"
 		},
 		{
+			"id": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
+			"mount": "zstack-sim-zmotion900"
+		},
+		{
 			"id": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",
 			"mount": "iGluSnFR_simulations"
 		}
