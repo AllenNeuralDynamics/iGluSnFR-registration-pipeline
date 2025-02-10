@@ -2,8 +2,16 @@
 	"version": 1,
 	"attached_datasets": [
 		{
+			"id": "18feafcf-a97d-43a0-8a70-c180eb673e7e",
+			"mount": "zstack-sim-zmotion900"
+		},
+		{
 			"id": "56885832-ccc9-4e7c-a019-14e653b60bb9",
 			"mount": "iGluSnFR_simulations_default"
+		},
+		{
+			"id": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+			"mount": "iGluSnFR_simulations_2"
 		},
 		{
 			"id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
@@ -18,8 +26,8 @@
 			"mount": "iGluSnFR_simulations_600"
 		},
 		{
-			"id": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
-			"mount": "zstack-sim-zmotion900"
+			"id": "81fce0e1-343a-4271-817c-b5562b037864",
+			"mount": "iGluSnFR_simulations_default_12"
 		},
 		{
 			"id": "d644fb2f-b6cf-4b78-8d3e-14a477f43056",

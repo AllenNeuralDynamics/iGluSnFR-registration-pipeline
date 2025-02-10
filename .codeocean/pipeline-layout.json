@@ -18,39 +18,9 @@
 			"target": "results"
 		},
 		{
-			"id": "reactflow__edge-86f8fd88-d5f4-4415-b31b-7940bbdab451-capsule_i_glu_sn_fr_registration_1",
-			"source": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
-			"target": "capsule_i_glu_sn_fr_registration_1"
-		},
-		{
-			"id": "reactflow__edge-86f8fd88-d5f4-4415-b31b-7940bbdab451-capsule_ca_im_an_suite_2_p_registeration_2",
-			"source": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
-			"target": "capsule_ca_im_an_suite_2_p_registeration_2"
-		},
-		{
-			"id": "reactflow__edge-86f8fd88-d5f4-4415-b31b-7940bbdab451-capsule_ca_im_an_suite_2_p_registeration_3",
-			"source": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
-			"target": "capsule_ca_im_an_suite_2_p_registeration_3"
-		},
-		{
-			"id": "reactflow__edge-86f8fd88-d5f4-4415-b31b-7940bbdab451-capsule_caleb_strip_reg_bergamo_4",
-			"source": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
-			"target": "capsule_caleb_strip_reg_bergamo_4"
-		},
-		{
 			"id": "reactflow__edge-capsule_caleb_strip_reg_bergamo_4-results",
 			"source": "capsule_caleb_strip_reg_bergamo_4",
 			"target": "results"
-		},
-		{
-			"id": "reactflow__edge-86f8fd88-d5f4-4415-b31b-7940bbdab451-capsule_ca_im_an_suite_2_p_registeration_5",
-			"source": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
-			"target": "capsule_ca_im_an_suite_2_p_registeration_5"
-		},
-		{
-			"id": "reactflow__edge-86f8fd88-d5f4-4415-b31b-7940bbdab451-capsule_ca_im_an_suite_2_p_registeration_6",
-			"source": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
-			"target": "capsule_ca_im_an_suite_2_p_registeration_6"
 		},
 		{
 			"id": "reactflow__edge-capsule_ca_im_an_suite_2_p_registeration_5-results",
@@ -63,6 +33,36 @@
 			"selected": false,
 			"source": "capsule_ca_im_an_suite_2_p_registeration_6",
 			"target": "results"
+		},
+		{
+			"id": "xy-edge__5ad0e40d-5747-44b6-8e0d-2d1352443c19-capsule_ca_im_an_suite_2_p_registeration_2",
+			"source": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+			"target": "capsule_ca_im_an_suite_2_p_registeration_2"
+		},
+		{
+			"id": "xy-edge__5ad0e40d-5747-44b6-8e0d-2d1352443c19-capsule_ca_im_an_suite_2_p_registeration_3",
+			"source": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+			"target": "capsule_ca_im_an_suite_2_p_registeration_3"
+		},
+		{
+			"id": "xy-edge__5ad0e40d-5747-44b6-8e0d-2d1352443c19-capsule_ca_im_an_suite_2_p_registeration_5",
+			"source": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+			"target": "capsule_ca_im_an_suite_2_p_registeration_5"
+		},
+		{
+			"id": "xy-edge__5ad0e40d-5747-44b6-8e0d-2d1352443c19-capsule_ca_im_an_suite_2_p_registeration_6",
+			"source": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+			"target": "capsule_ca_im_an_suite_2_p_registeration_6"
+		},
+		{
+			"id": "xy-edge__5ad0e40d-5747-44b6-8e0d-2d1352443c19-capsule_caleb_strip_reg_bergamo_4",
+			"source": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+			"target": "capsule_caleb_strip_reg_bergamo_4"
+		},
+		{
+			"id": "xy-edge__5ad0e40d-5747-44b6-8e0d-2d1352443c19-capsule_i_glu_sn_fr_registration_1",
+			"source": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+			"target": "capsule_i_glu_sn_fr_registration_1"
 		}
 	],
 	"nodes": [
@@ -148,13 +148,13 @@
 			"type": "capsule"
 		},
 		{
-			"id": "86f8fd88-d5f4-4415-b31b-7940bbdab451",
+			"id": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
 			"position": {
-				"x": 1516.6729920931691,
-				"y": 328.35162568047275
+				"x": 1490,
+				"y": 221.33333333333334
 			},
 			"type": "dataset"
 		}
 	],
-	"timestamp": 1738082549530
+	"timestamp": 1739208531615
 }

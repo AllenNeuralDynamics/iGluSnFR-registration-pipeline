@@ -1,14 +1,14 @@
 #!/usr/bin/env nextflow
-// hash:sha256:8fac7bf6a7a3c5569e02bc4750e118e05fbedaa2bfdb75bcf1454258b9e637a9
+// hash:sha256:d719e167dd5222108ca262320b22e3b05638aed92d749a662c87048d4e31fd65
 
 nextflow.enable.dsl = 1
 
-zstack_sim_zmotion900_to_iglusnfr_registration_1 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
-zstack_sim_zmotion900_to_caiman_suite2p_registeration_2 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
-zstack_sim_zmotion900_to_caiman_suite2p_registeration_3 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
-zstack_sim_zmotion900_to_caleb_stripregbergamo_4 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
-zstack_sim_zmotion900_to_caiman_suite2p_registeration_5 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
-zstack_sim_zmotion900_to_caiman_suite2p_registeration_6 = channel.fromPath("../data/zstack-sim-zmotion900/[1-900]*", type: 'any', relative: true)
+iglusnfr_simulations_2_to_iglusnfr_registration_1 = channel.fromPath("../data/iGluSnFR_simulations_2/[1-900]*", type: 'any', relative: true)
+iglusnfr_simulations_2_to_caiman_suite2p_registeration_2 = channel.fromPath("../data/iGluSnFR_simulations_2/[1-900]*", type: 'any', relative: true)
+iglusnfr_simulations_2_to_caiman_suite2p_registeration_3 = channel.fromPath("../data/iGluSnFR_simulations_2/[1-900]*", type: 'any', relative: true)
+iglusnfr_simulations_2_to_caleb_stripregbergamo_4 = channel.fromPath("../data/iGluSnFR_simulations_2/[1-900]*", type: 'any', relative: true)
+iglusnfr_simulations_2_to_caiman_suite2p_registeration_5 = channel.fromPath("../data/iGluSnFR_simulations_2/[1-900]*", type: 'any', relative: true)
+iglusnfr_simulations_2_to_caiman_suite2p_registeration_6 = channel.fromPath("../data/iGluSnFR_simulations_2/[1-900]*", type: 'any', relative: true)
 
 // capsule - iGluSnFR-registration
 process capsule_i_glu_sn_fr_registration_1 {
@@ -21,7 +21,7 @@ process capsule_i_glu_sn_fr_registration_1 {
 	publishDir "$RESULTS_PATH/stripRegisteration", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path1 from zstack_sim_zmotion900_to_iglusnfr_registration_1
+	val path1 from iglusnfr_simulations_2_to_iglusnfr_registration_1
 
 	output:
 	path 'capsule/results/*'
@@ -40,7 +40,7 @@ process capsule_i_glu_sn_fr_registration_1 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/zstack-sim-zmotion900/$path1" "capsule/data/$path1" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
+	ln -s "/tmp/data/iGluSnFR_simulations_2/$path1" "capsule/data/$path1" # id: 5ad0e40d-5747-44b6-8e0d-2d1352443c19
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6936755.git" capsule-repo
@@ -68,7 +68,7 @@ process capsule_ca_im_an_suite_2_p_registeration_2 {
 	publishDir "$RESULTS_PATH/suite2p", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path2 from zstack_sim_zmotion900_to_caiman_suite2p_registeration_2
+	val path2 from iglusnfr_simulations_2_to_caiman_suite2p_registeration_2
 
 	output:
 	path 'capsule/results/*'
@@ -87,11 +87,11 @@ process capsule_ca_im_an_suite_2_p_registeration_2 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/zstack-sim-zmotion900/$path2" "capsule/data/$path2" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
+	ln -s "/tmp/data/iGluSnFR_simulations_2/$path2" "capsule/data/$path2" # id: 5ad0e40d-5747-44b6-8e0d-2d1352443c19
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6874496.git" capsule-repo
-	git -C capsule-repo checkout be80bde3ec9e7d96eb5d295281c357ad16458fde --quiet
+	git -C capsule-repo checkout d48a28a1a5a281952de457a8acf01186721a13dd --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -115,7 +115,7 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	publishDir "$RESULTS_PATH/caiman", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path3 from zstack_sim_zmotion900_to_caiman_suite2p_registeration_3
+	val path3 from iglusnfr_simulations_2_to_caiman_suite2p_registeration_3
 
 	output:
 	path 'capsule/results/*'
@@ -134,11 +134,11 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/zstack-sim-zmotion900/$path3" "capsule/data/$path3" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
+	ln -s "/tmp/data/iGluSnFR_simulations_2/$path3" "capsule/data/$path3" # id: 5ad0e40d-5747-44b6-8e0d-2d1352443c19
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6874496.git" capsule-repo
-	git -C capsule-repo checkout be80bde3ec9e7d96eb5d295281c357ad16458fde --quiet
+	git -C capsule-repo checkout d48a28a1a5a281952de457a8acf01186721a13dd --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -157,12 +157,12 @@ process capsule_caleb_strip_reg_bergamo_4 {
 	container "$REGISTRY_HOST/capsule/8d25eaba-0297-4585-a287-6dff9f3a923d:ba1a69bb244ec8c4190c4ea5f6f73671"
 
 	cpus 64
-	memory '256 GB'
+	memory '128 GB'
 
 	publishDir "$RESULTS_PATH/stripRegisteration_matlab", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path4 from zstack_sim_zmotion900_to_caleb_stripregbergamo_4
+	val path4 from iglusnfr_simulations_2_to_caleb_stripregbergamo_4
 
 	output:
 	path 'capsule/results/*'
@@ -174,14 +174,14 @@ process capsule_caleb_strip_reg_bergamo_4 {
 
 	export CO_CAPSULE_ID=8d25eaba-0297-4585-a287-6dff9f3a923d
 	export CO_CPUS=64
-	export CO_MEMORY=274877906944
+	export CO_MEMORY=137438953472
 
 	mkdir -p capsule
 	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/zstack-sim-zmotion900/$path4" "capsule/data/$path4" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
+	ln -s "/tmp/data/iGluSnFR_simulations_2/$path4" "capsule/data/$path4" # id: 5ad0e40d-5747-44b6-8e0d-2d1352443c19
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8667111.git" capsule-repo
@@ -209,7 +209,7 @@ process capsule_ca_im_an_suite_2_p_registeration_5 {
 	publishDir "$RESULTS_PATH/caiman_stripCaiman", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path5 from zstack_sim_zmotion900_to_caiman_suite2p_registeration_5
+	val path5 from iglusnfr_simulations_2_to_caiman_suite2p_registeration_5
 
 	output:
 	path 'capsule/results/*'
@@ -228,11 +228,11 @@ process capsule_ca_im_an_suite_2_p_registeration_5 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/zstack-sim-zmotion900/$path5" "capsule/data/$path5" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
+	ln -s "/tmp/data/iGluSnFR_simulations_2/$path5" "capsule/data/$path5" # id: 5ad0e40d-5747-44b6-8e0d-2d1352443c19
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6874496.git" capsule-repo
-	git -C capsule-repo checkout be80bde3ec9e7d96eb5d295281c357ad16458fde --quiet
+	git -C capsule-repo checkout d48a28a1a5a281952de457a8acf01186721a13dd --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -256,7 +256,7 @@ process capsule_ca_im_an_suite_2_p_registeration_6 {
 	publishDir "$RESULTS_PATH/caiman_stripJnormcorre", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path6 from zstack_sim_zmotion900_to_caiman_suite2p_registeration_6
+	val path6 from iglusnfr_simulations_2_to_caiman_suite2p_registeration_6
 
 	output:
 	path 'capsule/results/*'
@@ -275,11 +275,11 @@ process capsule_ca_im_an_suite_2_p_registeration_6 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/zstack-sim-zmotion900/$path6" "capsule/data/$path6" # id: 86f8fd88-d5f4-4415-b31b-7940bbdab451
+	ln -s "/tmp/data/iGluSnFR_simulations_2/$path6" "capsule/data/$path6" # id: 5ad0e40d-5747-44b6-8e0d-2d1352443c19
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6874496.git" capsule-repo
-	git -C capsule-repo checkout be80bde3ec9e7d96eb5d295281c357ad16458fde --quiet
+	git -C capsule-repo checkout d48a28a1a5a281952de457a8acf01186721a13dd --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
