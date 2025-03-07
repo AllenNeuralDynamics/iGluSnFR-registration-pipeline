@@ -7,8 +7,8 @@
 				"id": "a87e854d-9183-4fb0-b089-1ddb75975fea",
 				"name": "iGluSnFR-registration",
 				"slug": "6936755",
-				"commit": "5f7376bc814130a962ea224bfdc577eba12eb0d6",
-				"image_tag": "4661f2289a0ae9f2d6abfbac71d41b87",
+				"commit": "9fa700678e7f1ea6d22c00a145e5d345940d4abf",
+				"image_tag": "9ad55c6db67526a08d4bb460f069990b",
 				"arguments": [
 					"/data/*",
 					"/results/"
@@ -16,21 +16,21 @@
 			},
 			"resources": {
 				"cpus": 64,
-				"memory": 128
+				"memory": 256
 			},
 			"inputs": [
 				{
 					"id": "jxAKKJfkyPn4e96U",
-					"source_id": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations_2",
-					"source_path": "iGluSnFR_simulations_2/[1-900]*"
+					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
+					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
 				}
 			],
 			"results": {
 				"id": "a87e854d-9183-4fb0-b089-1ddb75975fea",
 				"source_path": "*",
-				"target_path": "stripRegisteration"
+				"target_path": "stripRegistration"
 			}
 		},
 		{
@@ -39,7 +39,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "d48a28a1a5a281952de457a8acf01186721a13dd",
+				"commit": "6317094b5d532b12b313f94cb39bbb60a37dfd07",
 				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
@@ -49,15 +49,15 @@
 			},
 			"resources": {
 				"cpus": 64,
-				"memory": 128
+				"memory": 256
 			},
 			"inputs": [
 				{
 					"id": "5oimcWjKUHTxoZrE",
-					"source_id": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations_2",
-					"source_path": "iGluSnFR_simulations_2/[1-900]*"
+					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
+					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
 				}
 			],
 			"results": {
@@ -72,7 +72,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "d48a28a1a5a281952de457a8acf01186721a13dd",
+				"commit": "6317094b5d532b12b313f94cb39bbb60a37dfd07",
 				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
@@ -82,15 +82,15 @@
 			},
 			"resources": {
 				"cpus": 64,
-				"memory": 128
+				"memory": 256
 			},
 			"inputs": [
 				{
 					"id": "VccpAlKVId8iQ6Ww",
-					"source_id": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations_2",
-					"source_path": "iGluSnFR_simulations_2/[1-900]*"
+					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
+					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
 				}
 			],
 			"results": {
@@ -100,51 +100,12 @@
 			}
 		},
 		{
-			"name": "capsule_caleb_strip_reg_bergamo_4",
-			"capsule": {
-				"id": "8d25eaba-0297-4585-a287-6dff9f3a923d",
-				"name": "Caleb-stripRegBergamo",
-				"slug": "8667111",
-				"commit": "46f6793195adeed16c7d279de7a1ec15f7e0a024",
-				"image_tag": "ba1a69bb244ec8c4190c4ea5f6f73671",
-				"arguments": [
-					"--maxshift",
-					"50",
-					"--clipShift",
-					"10",
-					"--removeLines",
-					"4",
-					"--ds_time",
-					"0"
-				],
-				"app_panel": true
-			},
-			"resources": {
-				"cpus": 64,
-				"memory": 128
-			},
-			"inputs": [
-				{
-					"id": "wHyB4Z9ofdau6D0y",
-					"source_id": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
-					"type": "dataset",
-					"name": "iGluSnFR_simulations_2",
-					"source_path": "iGluSnFR_simulations_2/[1-900]*"
-				}
-			],
-			"results": {
-				"id": "8d25eaba-0297-4585-a287-6dff9f3a923d",
-				"source_path": "*",
-				"target_path": "stripRegisteration_matlab"
-			}
-		},
-		{
 			"name": "capsule_ca_im_an_suite_2_p_registeration_5",
 			"capsule": {
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "d48a28a1a5a281952de457a8acf01186721a13dd",
+				"commit": "6317094b5d532b12b313f94cb39bbb60a37dfd07",
 				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
@@ -155,15 +116,15 @@
 			},
 			"resources": {
 				"cpus": 64,
-				"memory": 128
+				"memory": 256
 			},
 			"inputs": [
 				{
 					"id": "TUnFEQFfUh8cbgru",
-					"source_id": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations_2",
-					"source_path": "iGluSnFR_simulations_2/[1-900]*"
+					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
+					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
 				}
 			],
 			"results": {
@@ -178,7 +139,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "d48a28a1a5a281952de457a8acf01186721a13dd",
+				"commit": "6317094b5d532b12b313f94cb39bbb60a37dfd07",
 				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
@@ -189,21 +150,48 @@
 			},
 			"resources": {
 				"cpus": 64,
-				"memory": 128
+				"memory": 256
 			},
 			"inputs": [
 				{
 					"id": "rqCEndG453c0iEYy",
-					"source_id": "5ad0e40d-5747-44b6-8e0d-2d1352443c19",
+					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations_2",
-					"source_path": "iGluSnFR_simulations_2/[1-900]*"
+					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
+					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
 				}
 			],
 			"results": {
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"source_path": "*",
 				"target_path": "caiman_stripJnormcorre"
+			}
+		},
+		{
+			"name": "capsule_pass_through_data_7",
+			"capsule": {
+				"id": "5e75700f-9d8b-4851-9294-872d4d38d822",
+				"name": "pass-through-data",
+				"slug": "6068962",
+				"commit": "0d03504ce05d5583294f81aeb1a65334c6e49d89",
+				"image_tag": "710a9814f018ff24b030107d1b250f07"
+			},
+			"resources": {
+				"cpus": 64,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "oSWjmXk0x7jTd5dj",
+					"source_id": "754dbb34-f5be-4326-9a05-8532080eb1a3",
+					"type": "dataset",
+					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings_motionCorrected_1xDS",
+					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings_motionCorrected_1xDS/*"
+				}
+			],
+			"results": {
+				"id": "5e75700f-9d8b-4851-9294-872d4d38d822",
+				"target_path": "stripRegistration_matlab"
 			}
 		}
 	]
