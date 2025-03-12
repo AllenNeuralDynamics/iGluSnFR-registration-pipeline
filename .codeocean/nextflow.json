@@ -39,7 +39,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "6317094b5d532b12b313f94cb39bbb60a37dfd07",
+				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
 				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
@@ -72,7 +72,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "6317094b5d532b12b313f94cb39bbb60a37dfd07",
+				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
 				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
@@ -105,7 +105,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "6317094b5d532b12b313f94cb39bbb60a37dfd07",
+				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
 				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
@@ -139,7 +139,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "6317094b5d532b12b313f94cb39bbb60a37dfd07",
+				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
 				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
