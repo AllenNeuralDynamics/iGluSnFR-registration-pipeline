@@ -8,6 +8,7 @@
 				"name": "iGluSnFR-registration",
 				"slug": "6936755",
 				"commit": "9fa700678e7f1ea6d22c00a145e5d345940d4abf",
+				"image_tag": "9ad55c6db67526a08d4bb460f069990b",
 				"arguments": [
 					"/data/*",
 					"/results/"
@@ -19,11 +20,11 @@
 			},
 			"inputs": [
 				{
-					"id": "jxAKKJfkyPn4e96U",
-					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
+					"id": "xcwLwvsL6WpTZaSZ",
+					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
 					"type": "dataset",
-					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
-					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
+					"name": "iGluSnFR_simulations",
+					"source_path": "iGluSnFR_simulations/*"
 				}
 			],
 			"results": {
@@ -38,12 +39,14 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
+				"commit": "80d9001c803a06d24f109cbfaec87801567001d5",
+				"image_tag": "51c0db4332c28243e96a156ad8d07275",
 				"arguments": [
 					"../data/*",
 					"../results/",
 					"suite2p"
-				]
+				],
+				"app_panel": true
 			},
 			"resources": {
 				"cpus": 64,
@@ -51,11 +54,11 @@
 			},
 			"inputs": [
 				{
-					"id": "5oimcWjKUHTxoZrE",
-					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
+					"id": "RrtlpbE8CMngu1uj",
+					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
 					"type": "dataset",
-					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
-					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
+					"name": "iGluSnFR_simulations",
+					"source_path": "iGluSnFR_simulations/*"
 				}
 			],
 			"results": {
@@ -70,12 +73,14 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
+				"commit": "80d9001c803a06d24f109cbfaec87801567001d5",
+				"image_tag": "51c0db4332c28243e96a156ad8d07275",
 				"arguments": [
 					"../data/*",
 					"../results/",
 					"caiman"
-				]
+				],
+				"app_panel": true
 			},
 			"resources": {
 				"cpus": 64,
@@ -83,11 +88,11 @@
 			},
 			"inputs": [
 				{
-					"id": "VccpAlKVId8iQ6Ww",
-					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
+					"id": "bM5MGFiOSLa81Wl5",
+					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
 					"type": "dataset",
-					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
-					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
+					"name": "iGluSnFR_simulations",
+					"source_path": "iGluSnFR_simulations/*"
 				}
 			],
 			"results": {
@@ -102,13 +107,15 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
+				"commit": "80d9001c803a06d24f109cbfaec87801567001d5",
+				"image_tag": "51c0db4332c28243e96a156ad8d07275",
 				"arguments": [
 					"../data/*",
 					"../results/",
 					"caiman",
 					"caiman_initial_temp"
-				]
+				],
+				"app_panel": true
 			},
 			"resources": {
 				"cpus": 64,
@@ -116,11 +123,11 @@
 			},
 			"inputs": [
 				{
-					"id": "TUnFEQFfUh8cbgru",
-					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
+					"id": "ID41wotomolhETrT",
+					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
 					"type": "dataset",
-					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
-					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
+					"name": "iGluSnFR_simulations",
+					"source_path": "iGluSnFR_simulations/*"
 				}
 			],
 			"results": {
@@ -135,13 +142,15 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
-				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
+				"commit": "80d9001c803a06d24f109cbfaec87801567001d5",
+				"image_tag": "51c0db4332c28243e96a156ad8d07275",
 				"arguments": [
 					"../data/*",
 					"../results/",
 					"caiman",
 					"jorncorre_initial_temp"
-				]
+				],
+				"app_panel": true
 			},
 			"resources": {
 				"cpus": 64,
@@ -149,11 +158,11 @@
 			},
 			"inputs": [
 				{
-					"id": "rqCEndG453c0iEYy",
-					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
+					"id": "naqmrccCC4wVXcJ0",
+					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
 					"type": "dataset",
-					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
-					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
+					"name": "iGluSnFR_simulations",
+					"source_path": "iGluSnFR_simulations/*"
 				}
 			],
 			"results": {
@@ -168,7 +177,8 @@
 				"id": "5e75700f-9d8b-4851-9294-872d4d38d822",
 				"name": "pass-through-data",
 				"slug": "6068962",
-				"commit": "0d03504ce05d5583294f81aeb1a65334c6e49d89"
+				"commit": "0d03504ce05d5583294f81aeb1a65334c6e49d89",
+				"image_tag": "710a9814f018ff24b030107d1b250f07"
 			},
 			"resources": {
 				"cpus": 64,
@@ -176,11 +186,11 @@
 			},
 			"inputs": [
 				{
-					"id": "oSWjmXk0x7jTd5dj",
-					"source_id": "754dbb34-f5be-4326-9a05-8532080eb1a3",
+					"id": "eqbZPPTeInTmh2Gq",
+					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
 					"type": "dataset",
-					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings_motionCorrected_1xDS",
-					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings_motionCorrected_1xDS/*"
+					"name": "iGluSnFR_simulations",
+					"source_path": "iGluSnFR_simulations/*"
 				}
 			],
 			"results": {
