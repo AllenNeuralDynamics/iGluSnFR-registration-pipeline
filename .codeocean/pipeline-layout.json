@@ -1,12 +1,6 @@
 {
 	"edges": [
 		{
-			"id": "reactflow__edge-capsule_i_glu_sn_fr_registration_1-results",
-			"selected": false,
-			"source": "capsule_i_glu_sn_fr_registration_1",
-			"target": "results"
-		},
-		{
 			"id": "reactflow__edge-capsule_ca_im_an_suite_2_p_registeration_2-results",
 			"selected": false,
 			"source": "capsule_ca_im_an_suite_2_p_registeration_2",
@@ -19,28 +13,10 @@
 			"target": "results"
 		},
 		{
-			"id": "reactflow__edge-capsule_ca_im_an_suite_2_p_registeration_5-results",
-			"selected": false,
-			"source": "capsule_ca_im_an_suite_2_p_registeration_5",
-			"target": "results"
-		},
-		{
-			"id": "reactflow__edge-capsule_ca_im_an_suite_2_p_registeration_6-results",
-			"selected": false,
-			"source": "capsule_ca_im_an_suite_2_p_registeration_6",
-			"target": "results"
-		},
-		{
 			"id": "xy-edge__capsule_pass_through_data_7-results",
 			"selected": false,
 			"source": "capsule_pass_through_data_7",
 			"target": "results"
-		},
-		{
-			"id": "xy-edge__89ccc971-921d-4ee1-9649-c157cace748c-capsule_i_glu_sn_fr_registration_1",
-			"selected": false,
-			"source": "89ccc971-921d-4ee1-9649-c157cace748c",
-			"target": "capsule_i_glu_sn_fr_registration_1"
 		},
 		{
 			"id": "xy-edge__89ccc971-921d-4ee1-9649-c157cace748c-capsule_ca_im_an_suite_2_p_registeration_2",
@@ -55,21 +31,9 @@
 			"target": "capsule_ca_im_an_suite_2_p_registeration_3"
 		},
 		{
-			"id": "xy-edge__89ccc971-921d-4ee1-9649-c157cace748c-capsule_ca_im_an_suite_2_p_registeration_5",
+			"id": "xy-edge__6ec7a288-c6c9-436a-b29c-5bb10a78af65-capsule_pass_through_data_7",
 			"selected": false,
-			"source": "89ccc971-921d-4ee1-9649-c157cace748c",
-			"target": "capsule_ca_im_an_suite_2_p_registeration_5"
-		},
-		{
-			"id": "xy-edge__89ccc971-921d-4ee1-9649-c157cace748c-capsule_ca_im_an_suite_2_p_registeration_6",
-			"selected": false,
-			"source": "89ccc971-921d-4ee1-9649-c157cace748c",
-			"target": "capsule_ca_im_an_suite_2_p_registeration_6"
-		},
-		{
-			"id": "xy-edge__89ccc971-921d-4ee1-9649-c157cace748c-capsule_pass_through_data_7",
-			"selected": false,
-			"source": "89ccc971-921d-4ee1-9649-c157cace748c",
+			"source": "6ec7a288-c6c9-436a-b29c-5bb10a78af65",
 			"target": "capsule_pass_through_data_7"
 		}
 	],
@@ -82,18 +46,6 @@
 			},
 			"selected": false,
 			"type": "results"
-		},
-		{
-			"data": {
-				"capsule_id": "a87e854d-9183-4fb0-b089-1ddb75975fea"
-			},
-			"id": "capsule_i_glu_sn_fr_registration_1",
-			"position": {
-				"x": 484.84327384144046,
-				"y": 518.2743588377657
-			},
-			"selected": false,
-			"type": "capsule"
 		},
 		{
 			"data": {
@@ -121,45 +73,12 @@
 		},
 		{
 			"data": {
-				"capsule_id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51"
-			},
-			"id": "capsule_ca_im_an_suite_2_p_registeration_5",
-			"position": {
-				"x": 1629.2557957544807,
-				"y": 518.3621851396783
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51"
-			},
-			"id": "capsule_ca_im_an_suite_2_p_registeration_6",
-			"position": {
-				"x": 2029.2268473307286,
-				"y": 522.4152242401575
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"id": "754dbb34-f5be-4326-9a05-8532080eb1a3",
-			"position": {
-				"x": 1951.4894818383373,
-				"y": -205.00134322241456
-			},
-			"selected": true,
-			"type": "dataset"
-		},
-		{
-			"data": {
 				"capsule_id": "5e75700f-9d8b-4851-9294-872d4d38d822"
 			},
 			"id": "capsule_pass_through_data_7",
 			"position": {
-				"x": 2370.911050498756,
-				"y": 566.3580347107597
+				"x": 1658.1297578204462,
+				"y": 499.89824052164
 			},
 			"selected": false,
 			"type": "capsule"
@@ -167,16 +86,25 @@
 		{
 			"id": "89ccc971-921d-4ee1-9649-c157cace748c",
 			"position": {
-				"x": 1443.733418565199,
-				"y": 63.31602797230295
+				"x": 1103.1269733459599,
+				"y": 144.72927585397474
 			},
 			"selected": false,
 			"type": "dataset"
+		},
+		{
+			"id": "6ec7a288-c6c9-436a-b29c-5bb10a78af65",
+			"position": {
+				"x": 1754.4329563993342,
+				"y": 143.06778099924674
+			},
+			"selected": true,
+			"type": "dataset"
 		}
 	],
-	"timestamp": 1778832336435,
+	"timestamp": 1778864863891,
 	"viewport": {
-		"x": -150.9033250690345,
+		"x": -150.90332506903462,
 		"y": 195.51346143929032,
 		"zoom": 0.6018676477717475
 	}

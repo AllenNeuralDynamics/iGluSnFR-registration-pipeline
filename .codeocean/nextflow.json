@@ -2,44 +2,12 @@
 	"version": 1,
 	"processes": [
 		{
-			"name": "capsule_i_glu_sn_fr_registration_1",
-			"capsule": {
-				"id": "a87e854d-9183-4fb0-b089-1ddb75975fea",
-				"name": "iGluSnFR-registration",
-				"slug": "6936755",
-				"commit": "9fa700678e7f1ea6d22c00a145e5d345940d4abf",
-				"image_tag": "9ad55c6db67526a08d4bb460f069990b",
-				"arguments": [
-					"/data/*",
-					"/results/"
-				]
-			},
-			"resources": {
-				"cpus": 64,
-				"memory": 256
-			},
-			"inputs": [
-				{
-					"id": "xcwLwvsL6WpTZaSZ",
-					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
-					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
-				}
-			],
-			"results": {
-				"id": "a87e854d-9183-4fb0-b089-1ddb75975fea",
-				"source_path": "*",
-				"target_path": "stripRegistration"
-			}
-		},
-		{
 			"name": "capsule_ca_im_an_suite_2_p_registeration_2",
 			"capsule": {
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
-				"name": "CaImAn-Suite2p-Registeration",
+				"name": "CaImAn-Suite2p-Registration",
 				"slug": "6874496",
-				"commit": "80d9001c803a06d24f109cbfaec87801567001d5",
+				"commit": "405ac880b096a4b75c645ef28b2cdc5f49f93086",
 				"image_tag": "51c0db4332c28243e96a156ad8d07275",
 				"arguments": [
 					"../data/*",
@@ -71,9 +39,9 @@
 			"name": "capsule_ca_im_an_suite_2_p_registeration_3",
 			"capsule": {
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
-				"name": "CaImAn-Suite2p-Registeration",
+				"name": "CaImAn-Suite2p-Registration",
 				"slug": "6874496",
-				"commit": "80d9001c803a06d24f109cbfaec87801567001d5",
+				"commit": "405ac880b096a4b75c645ef28b2cdc5f49f93086",
 				"image_tag": "51c0db4332c28243e96a156ad8d07275",
 				"arguments": [
 					"../data/*",
@@ -102,76 +70,6 @@
 			}
 		},
 		{
-			"name": "capsule_ca_im_an_suite_2_p_registeration_5",
-			"capsule": {
-				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
-				"name": "CaImAn-Suite2p-Registeration",
-				"slug": "6874496",
-				"commit": "80d9001c803a06d24f109cbfaec87801567001d5",
-				"image_tag": "51c0db4332c28243e96a156ad8d07275",
-				"arguments": [
-					"../data/*",
-					"../results/",
-					"caiman",
-					"caiman_initial_temp"
-				],
-				"app_panel": true
-			},
-			"resources": {
-				"cpus": 64,
-				"memory": 256
-			},
-			"inputs": [
-				{
-					"id": "ID41wotomolhETrT",
-					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
-					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
-				}
-			],
-			"results": {
-				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
-				"source_path": "*",
-				"target_path": "caiman_stripCaiman"
-			}
-		},
-		{
-			"name": "capsule_ca_im_an_suite_2_p_registeration_6",
-			"capsule": {
-				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
-				"name": "CaImAn-Suite2p-Registeration",
-				"slug": "6874496",
-				"commit": "80d9001c803a06d24f109cbfaec87801567001d5",
-				"image_tag": "51c0db4332c28243e96a156ad8d07275",
-				"arguments": [
-					"../data/*",
-					"../results/",
-					"caiman",
-					"jorncorre_initial_temp"
-				],
-				"app_panel": true
-			},
-			"resources": {
-				"cpus": 64,
-				"memory": 256
-			},
-			"inputs": [
-				{
-					"id": "naqmrccCC4wVXcJ0",
-					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
-					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
-				}
-			],
-			"results": {
-				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
-				"source_path": "*",
-				"target_path": "caiman_stripJnormcorre"
-			}
-		},
-		{
 			"name": "capsule_pass_through_data_7",
 			"capsule": {
 				"id": "5e75700f-9d8b-4851-9294-872d4d38d822",
@@ -186,11 +84,11 @@
 			},
 			"inputs": [
 				{
-					"id": "eqbZPPTeInTmh2Gq",
-					"source_id": "89ccc971-921d-4ee1-9649-c157cace748c",
+					"id": "7IYCA2m0WnW0Gcwa",
+					"source_id": "6ec7a288-c6c9-436a-b29c-5bb10a78af65",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
+					"name": "iGluSnFR_registered",
+					"source_path": "iGluSnFR_registered/*"
 				}
 			],
 			"results": {
