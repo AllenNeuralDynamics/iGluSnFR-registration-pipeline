@@ -1,12 +1,10 @@
 #!/usr/bin/env nextflow
-// hash:sha256:65c6c7c6f5ca3a40b23ed8c33dd4c941cb122c8b5dd4f9a6fdf62c59ad828836
+// hash:sha256:dfaae364dbdcb7bee7fe23906eac6b2e4d9efe477f4fa38e162458d18fe3840a
 
 nextflow.enable.dsl = 1
 
-params.iglusnfr_simulations_url = 's3://aind-scratch-data/iGluSnFR_simulations_default'
-
-iglusnfr_simulations_to_caiman_suite2p_registration_1 = channel.fromPath(params.iglusnfr_simulations_url + "/*", type: 'any')
-iglusnfr_simulations_to_caiman_suite2p_registration_2 = channel.fromPath(params.iglusnfr_simulations_url + "/*", type: 'any')
+iglusnfr4f_dendrite_passivedriftinggratings_to_caiman_suite2p_registration_1 = channel.fromPath("../data/iGluSnFR4f_dendrite_passiveDriftingGratings/*", type: 'any', relative: true)
+iglusnfr4f_dendrite_passivedriftinggratings_to_caiman_suite2p_registration_2 = channel.fromPath("../data/iGluSnFR4f_dendrite_passiveDriftingGratings/*", type: 'any', relative: true)
 
 // capsule - CaImAn-Suite2p-Registration
 process capsule_ca_im_an_suite_2_p_registeration_2 {
@@ -19,7 +17,7 @@ process capsule_ca_im_an_suite_2_p_registeration_2 {
 	publishDir "$RESULTS_PATH/suite2p", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	path 'capsule/data/' from iglusnfr_simulations_to_caiman_suite2p_registration_1
+	val path1 from iglusnfr4f_dendrite_passivedriftinggratings_to_caiman_suite2p_registration_1
 
 	output:
 	path 'capsule/results/*'
@@ -37,6 +35,8 @@ process capsule_ca_im_an_suite_2_p_registeration_2 {
 	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
+
+	ln -s "/tmp/data/iGluSnFR4f_dendrite_passiveDriftingGratings/$path1" "capsule/data/$path1" # id: 642ba851-556a-4b85-bad8-ea74dbf9c55d
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
@@ -68,7 +68,7 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	publishDir "$RESULTS_PATH/caiman", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	path 'capsule/data/' from iglusnfr_simulations_to_caiman_suite2p_registration_2
+	val path2 from iglusnfr4f_dendrite_passivedriftinggratings_to_caiman_suite2p_registration_2
 
 	output:
 	path 'capsule/results/*'
@@ -86,6 +86,8 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
+
+	ln -s "/tmp/data/iGluSnFR4f_dendrite_passiveDriftingGratings/$path2" "capsule/data/$path2" # id: 642ba851-556a-4b85-bad8-ea74dbf9c55d
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
