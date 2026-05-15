@@ -46,7 +46,8 @@
 				"arguments": [
 					"../data/*",
 					"../results/",
-					"caiman"
+					"caiman",
+					"jnormcorre_initial_temp"
 				],
 				"app_panel": true
 			},

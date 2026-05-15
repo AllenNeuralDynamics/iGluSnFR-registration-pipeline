@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:dfaae364dbdcb7bee7fe23906eac6b2e4d9efe477f4fa38e162458d18fe3840a
+// hash:sha256:857afc9971e91367fec66ae4c9bc6c552672d3b72b843dd9179d076335678eab
 
 nextflow.enable.dsl = 1
 
@@ -102,7 +102,7 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	echo "[${task.tag}] running capsule..."
 	cd capsule/code
 	chmod +x run
-	./run ../data/* ../results/ caiman
+	./run ../data/* ../results/ caiman jnormcorre_initial_temp
 
 	echo "[${task.tag}] completed!"
 	"""
