@@ -8,7 +8,6 @@
 				"name": "iGluSnFR-registration",
 				"slug": "6936755",
 				"commit": "9fa700678e7f1ea6d22c00a145e5d345940d4abf",
-				"image_tag": "9ad55c6db67526a08d4bb460f069990b",
 				"arguments": [
 					"/data/*",
 					"/results/"
@@ -40,7 +39,6 @@
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
 				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
-				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
 					"../results/",
@@ -73,7 +71,6 @@
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
 				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
-				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
 					"../results/",
@@ -106,7 +103,6 @@
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
 				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
-				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
 					"../results/",
@@ -140,7 +136,6 @@
 				"name": "CaImAn-Suite2p-Registeration",
 				"slug": "6874496",
 				"commit": "cd43a99d2c17139a5a5a03b0b4b63612cf5d15d5",
-				"image_tag": "cda60c6ae52416ac2a633366a4a7c940",
 				"arguments": [
 					"../data/*",
 					"../results/",
@@ -173,8 +168,7 @@
 				"id": "5e75700f-9d8b-4851-9294-872d4d38d822",
 				"name": "pass-through-data",
 				"slug": "6068962",
-				"commit": "0d03504ce05d5583294f81aeb1a65334c6e49d89",
-				"image_tag": "710a9814f018ff24b030107d1b250f07"
+				"commit": "0d03504ce05d5583294f81aeb1a65334c6e49d89"
 			},
 			"resources": {
 				"cpus": 64,
