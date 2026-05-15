@@ -6,14 +6,6 @@
 			"mount": "iGluSnFR4f_dendrite_passiveDriftingGratings"
 		},
 		{
-			"id": "6ec7a288-c6c9-436a-b29c-5bb10a78af65",
-			"mount": "iGluSnFR_registered"
-		},
-		{
-			"id": "754dbb34-f5be-4326-9a05-8532080eb1a3",
-			"mount": "iGluSnFR4f_dendrite_passiveDriftingGratings_motionCorrected_1xDS"
-		},
-		{
 			"id": "89ccc971-921d-4ee1-9649-c157cace748c",
 			"mount": "iGluSnFR_simulations"
 		}

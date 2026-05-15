@@ -7,7 +7,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registration",
 				"slug": "6874496",
-				"commit": "405ac880b096a4b75c645ef28b2cdc5f49f93086",
+				"commit": "f02c2bc0a944fc77ab162905d4dcb43031a6628b",
 				"image_tag": "51c0db4332c28243e96a156ad8d07275",
 				"arguments": [
 					"../data/*",
@@ -41,7 +41,7 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"name": "CaImAn-Suite2p-Registration",
 				"slug": "6874496",
-				"commit": "405ac880b096a4b75c645ef28b2cdc5f49f93086",
+				"commit": "f02c2bc0a944fc77ab162905d4dcb43031a6628b",
 				"image_tag": "51c0db4332c28243e96a156ad8d07275",
 				"arguments": [
 					"../data/*",
@@ -67,33 +67,6 @@
 				"id": "db98af8f-7c66-40ac-b6ea-f39dbabedf51",
 				"source_path": "*",
 				"target_path": "caiman"
-			}
-		},
-		{
-			"name": "capsule_pass_through_data_7",
-			"capsule": {
-				"id": "5e75700f-9d8b-4851-9294-872d4d38d822",
-				"name": "pass-through-data",
-				"slug": "6068962",
-				"commit": "0d03504ce05d5583294f81aeb1a65334c6e49d89",
-				"image_tag": "710a9814f018ff24b030107d1b250f07"
-			},
-			"resources": {
-				"cpus": 64,
-				"memory": 8
-			},
-			"inputs": [
-				{
-					"id": "7IYCA2m0WnW0Gcwa",
-					"source_id": "6ec7a288-c6c9-436a-b29c-5bb10a78af65",
-					"type": "dataset",
-					"name": "iGluSnFR_registered",
-					"source_path": "iGluSnFR_registered/*"
-				}
-			],
-			"results": {
-				"id": "5e75700f-9d8b-4851-9294-872d4d38d822",
-				"target_path": "stripRegistration_matlab"
 			}
 		}
 	]

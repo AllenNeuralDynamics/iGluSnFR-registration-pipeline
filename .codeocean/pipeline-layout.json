@@ -13,12 +13,6 @@
 			"target": "results"
 		},
 		{
-			"id": "xy-edge__capsule_pass_through_data_7-results",
-			"selected": false,
-			"source": "capsule_pass_through_data_7",
-			"target": "results"
-		},
-		{
 			"id": "xy-edge__89ccc971-921d-4ee1-9649-c157cace748c-capsule_ca_im_an_suite_2_p_registeration_2",
 			"selected": false,
 			"source": "89ccc971-921d-4ee1-9649-c157cace748c",
@@ -29,12 +23,6 @@
 			"selected": false,
 			"source": "89ccc971-921d-4ee1-9649-c157cace748c",
 			"target": "capsule_ca_im_an_suite_2_p_registeration_3"
-		},
-		{
-			"id": "xy-edge__6ec7a288-c6c9-436a-b29c-5bb10a78af65-capsule_pass_through_data_7",
-			"selected": false,
-			"source": "6ec7a288-c6c9-436a-b29c-5bb10a78af65",
-			"target": "capsule_pass_through_data_7"
 		}
 	],
 	"nodes": [
@@ -53,8 +41,8 @@
 			},
 			"id": "capsule_ca_im_an_suite_2_p_registeration_2",
 			"position": {
-				"x": 850.693759407083,
-				"y": 512.9110615431055
+				"x": 1010.1972654609704,
+				"y": 541.1564740734815
 			},
 			"selected": false,
 			"type": "capsule"
@@ -65,20 +53,8 @@
 			},
 			"id": "capsule_ca_im_an_suite_2_p_registeration_3",
 			"position": {
-				"x": 1217.3737992071315,
-				"y": 522.0160595279674
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "5e75700f-9d8b-4851-9294-872d4d38d822"
-			},
-			"id": "capsule_pass_through_data_7",
-			"position": {
-				"x": 1658.1297578204462,
-				"y": 499.89824052164
+				"x": 1690.89983280461,
+				"y": 543.6154926394313
 			},
 			"selected": false,
 			"type": "capsule"
@@ -86,23 +62,14 @@
 		{
 			"id": "89ccc971-921d-4ee1-9649-c157cace748c",
 			"position": {
-				"x": 1103.1269733459599,
-				"y": 144.72927585397474
-			},
-			"selected": false,
-			"type": "dataset"
-		},
-		{
-			"id": "6ec7a288-c6c9-436a-b29c-5bb10a78af65",
-			"position": {
-				"x": 1754.4329563993342,
-				"y": 143.06778099924674
+				"x": 1397.2115626328148,
+				"y": 172.97468838435069
 			},
 			"selected": true,
 			"type": "dataset"
 		}
 	],
-	"timestamp": 1778864863891,
+	"timestamp": 1778869801975,
 	"viewport": {
 		"x": -150.90332506903462,
 		"y": 195.51346143929032,
