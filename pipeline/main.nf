@@ -1,10 +1,12 @@
 #!/usr/bin/env nextflow
-// hash:sha256:13f90a7685b9854f770c198dbbfa973deaad1f2feb2982281e0afca69bb19a73
+// hash:sha256:f9afe5394e487791989e6e3334f139c1718279a67d496e12b45cc65d1a35aa81
 
 nextflow.enable.dsl = 1
 
-iglusnfr_simulations_to_caiman_suite2p_registration_1 = channel.fromPath("../data/iGluSnFR_simulations/*", type: 'any', relative: true)
-iglusnfr_simulations_to_caiman_suite2p_registration_2 = channel.fromPath("../data/iGluSnFR_simulations/*", type: 'any', relative: true)
+params.iglusnfr_simulations_url = 's3://aind-scratch-data/iGluSnFR-assets/simulations/iGluSnFR_simulations_vary_brightness'
+
+iglusnfr_simulations_to_caiman_suite2p_registration_1 = channel.fromPath(params.iglusnfr_simulations_url + "/*", type: 'any')
+iglusnfr_simulations_to_caiman_suite2p_registration_2 = channel.fromPath(params.iglusnfr_simulations_url + "/*", type: 'any')
 
 // capsule - CaImAn-Suite2p-Registration
 process capsule_ca_im_an_suite_2_p_registeration_2 {
@@ -17,7 +19,7 @@ process capsule_ca_im_an_suite_2_p_registeration_2 {
 	publishDir "$RESULTS_PATH/suite2p", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path1 from iglusnfr_simulations_to_caiman_suite2p_registration_1
+	path 'capsule/data/' from iglusnfr_simulations_to_caiman_suite2p_registration_1
 
 	output:
 	path 'capsule/results/*'
@@ -35,8 +37,6 @@ process capsule_ca_im_an_suite_2_p_registeration_2 {
 	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
-
-	ln -s "/tmp/data/iGluSnFR_simulations/$path1" "capsule/data/$path1" # id: dfb5c9f4-77c4-4a91-96fe-2551a70d0891
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
@@ -68,7 +68,7 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	publishDir "$RESULTS_PATH/caiman", saveAs: { filename -> filename.matches("capsule/results/.*") ? new File(filename).getName() : null }
 
 	input:
-	val path2 from iglusnfr_simulations_to_caiman_suite2p_registration_2
+	path 'capsule/data/' from iglusnfr_simulations_to_caiman_suite2p_registration_2
 
 	output:
 	path 'capsule/results/*'
@@ -86,8 +86,6 @@ process capsule_ca_im_an_suite_2_p_registeration_3 {
 	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
-
-	ln -s "/tmp/data/iGluSnFR_simulations/$path2" "capsule/data/$path2" # id: dfb5c9f4-77c4-4a91-96fe-2551a70d0891
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
