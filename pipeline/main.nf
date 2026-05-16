@@ -1,9 +1,9 @@
 #!/usr/bin/env nextflow
-// hash:sha256:d5b8482d28ebbadd281a274a17f770bae28b6c9df48c6ed6fc6bdc55c4af079d
+// hash:sha256:311220ed65faaa9bdc7384538b76ccd2538f2d754909d62691567e25bc45ee4a
 
 nextflow.enable.dsl = 1
 
-params.iglusnfr_simulations_url = 's3://aind-scratch-data/iGluSnFR-assets/simulations/iGluSnFR_simulations_vary_nsites'
+params.iglusnfr_simulations_url = 's3://aind-scratch-data/iGluSnFR-assets/simulations/iGluSnFR_simulations_vary_motion'
 
 iglusnfr_simulations_to_caiman_suite2p_registration_1 = channel.fromPath(params.iglusnfr_simulations_url + "/*", type: 'any')
 iglusnfr_simulations_to_caiman_suite2p_registration_2 = channel.fromPath(params.iglusnfr_simulations_url + "/*", type: 'any')
