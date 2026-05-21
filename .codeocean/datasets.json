@@ -2,8 +2,8 @@
 	"version": 1,
 	"attached_datasets": [
 		{
-			"id": "1db7d71e-6c91-40fd-bed4-a5e7ae2cbaae",
-			"mount": "iGluSnFR_simulations"
+			"id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
+			"mount": "iGluSnFR4f_dendrite_passiveDriftingGratings"
 		}
 	]
 }

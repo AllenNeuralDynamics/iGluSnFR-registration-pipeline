@@ -22,11 +22,11 @@
 			},
 			"inputs": [
 				{
-					"id": "f6iGG5Vv0Q5Bn8aO",
-					"source_id": "1db7d71e-6c91-40fd-bed4-a5e7ae2cbaae",
+					"id": "fGDs9UQUjNz918xp",
+					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
+					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
+					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
 				}
 			],
 			"results": {
@@ -57,11 +57,11 @@
 			},
 			"inputs": [
 				{
-					"id": "0pF9tGA6ZKiTZDBL",
-					"source_id": "1db7d71e-6c91-40fd-bed4-a5e7ae2cbaae",
+					"id": "9w0c4U8qcBPSKtT6",
+					"source_id": "642ba851-556a-4b85-bad8-ea74dbf9c55d",
 					"type": "dataset",
-					"name": "iGluSnFR_simulations",
-					"source_path": "iGluSnFR_simulations/*"
+					"name": "iGluSnFR4f_dendrite_passiveDriftingGratings",
+					"source_path": "iGluSnFR4f_dendrite_passiveDriftingGratings/*"
 				}
 			],
 			"results": {
